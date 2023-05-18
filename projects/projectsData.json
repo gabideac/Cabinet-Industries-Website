@@ -1,0 +1,97 @@
+[
+    {
+        "title": "Bucatarie MDF albastra",
+        "description": "Bucatarie mare din MDF vopsita cu albastru royal",
+        "clientName": "Gabi",
+        "clientTestamony": "Mobila de inalta calitate la un pret bun. ",
+        "price": "12000 euro",
+        "featured": true,
+        "position": "2",
+        "titleImageName": "img3.jpg",
+        "clientImage": "crop.jpg",
+        "id": "e770b6fb-6845-46eb-9236-0befc54569c1.1",
+        "images": [
+            "img1.jpg",
+            "img2.jpg",
+            "img4.jpg",
+            "titleImg.jpg",
+            "img3.jpg"
+        ]
+    },
+    {
+        "title": "Birou Modern",
+        "description": "Birouri din fier forjat cu balt din lemn masiv, riflaje din pal pentru un design unicat.",
+        "clientName": "Bruce Wayne",
+        "clientTestamony": "This ofices offer plenty space to hide thing in. I said too much",
+        "price": "20000 euro",
+        "featured": "true",
+        "position": "0",
+        "titleImageName": "titleImg.jpg",
+        "clientImage": "d7katwv-7c85906c-f275-4fee-8d4c-b9c417f9c252.jpg",
+        "id": "873c3bc2-b63d-4355-9d76-dda4f50662e9.1",
+        "images": [
+            "img2.jpg",
+            "img3.jpg",
+            "img4.jpg",
+            "img5.jpg",
+            "img6.jpg",
+            "img7.jpg",
+            "titleImg.jpg"
+        ]
+    },
+    {
+        "title": "Dresing ",
+        "description": "A dressing build with care to offer plenty of space for cloths, shoes and other things",
+        "clientName": "Barney ",
+        "clientTestamony": "I got a bunch of suits. They all fit in here",
+        "price": "2500 euro",
+        "featured": "true",
+        "position": "0",
+        "titleImageName": "titleImg.jpg",
+        "clientImage": "Untitled.jpg",
+        "id": "e23f1014-adb3-4967-aae6-e15ea4f896a9.1",
+        "images": [
+            "img1.jpg",
+            "img2.jpg",
+            "titleImg.jpg"
+        ]
+    },
+    {
+        "title": "Bucatarie Culori Deschise",
+        "description": "Bucatarie din culori deschise, cu front",
+        "clientName": "",
+        "clientTestamony": "",
+        "price": "3500 euro",
+        "featured": "false",
+        "position": "0",
+        "titleImageName": "titleImg.jpg",
+        "clientImage": "undefined",
+        "images": [
+            "img1.jpg",
+            "titleImg.jpg"
+        ],
+        "id": "1b56bfb1-9344-4c9a-8353-ab78113f5bdb.1"
+    },
+    {
+        "title": "Mobilier divers",
+        "description": "Mobilier dicvers vopsit cu culori deschise. Include dressing, mobilier pentru living, corp pentru chiuveta de baie, mobilier cu oglinda si dulapuri",
+        "clientName": "Ron Swanson",
+        "clientTestamony": "This furniture is good.",
+        "price": "10000 $",
+        "featured": "false",
+        "position": "1",
+        "titleImageName": "titleImg.jpg",
+        "clientImage": "ronSwanson.jpg",
+        "id": "bd4fd3e7-11a7-4828-a933-ffe683ebe01c.1",
+        "images": [
+            "img1.jpg",
+            "img2.jpg",
+            "img3.jpg",
+            "img4.jpg",
+            "img5.jpg",
+            "img6.jpg",
+            "img7.jpg",
+            "titleImg.jpg"
+        ]
+    }
+]
