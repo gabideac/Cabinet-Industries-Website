@@ -11,8 +11,6 @@ const { all } = require('./routes/root');
 const PORT = process.env.PORT || 3030
 const projectsRoutes = require('./routes/projects')
 
-console.log(process.env.NODE_ENV)
-
 app.use(logger)
 
 app.use(cors(corsOptions))
