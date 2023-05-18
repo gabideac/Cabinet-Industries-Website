@@ -1,7 +1,7 @@
 This is a full-stack project.
 To get things started: 
-- start the server: cd to 'backend', then type: 'npm run dev' 
-- start the react application: cd to 'cabinet-industries-web', then type 'npm start'
+- start the server: cd to 'backend',(npm install), then type: 'npm run dev' 
+- start the react application: cd to 'cabinet-industries-web',(npm install), then type 'npm start'
 
 I kept the project folders with some projects already in them as a quick demo. Projects can be viewed as teaser cards on the main page(http://localhost:3000/) or on the projects page(/projects)
 If you want to add projects go to'/uploadform'. If you want to edit or delete projects go to '/manageprojects'.
