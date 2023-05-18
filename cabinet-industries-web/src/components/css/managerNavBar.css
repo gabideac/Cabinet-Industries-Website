@@ -1,0 +1,4 @@
+#managerNavBar {
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,25 @@
+.projectCards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projectsTitle {
+    font-family: 'Tilt Prism', cursive;
+    color: #f7a61b;
+    font-size: 1.5rem;
+    margin: 0;
+    padding-left: 5%;
+    padding-top: 30px;
+}
+
+@media (min-width: 600px){
+.projectsTitle{
+    font-size: 3rem;
+}
+
+    .projectCards{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}

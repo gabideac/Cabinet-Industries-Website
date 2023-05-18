@@ -1,0 +1,55 @@
+.headerPhoto {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+
+.navigation {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.navlink {
+    font-family: quicksand, sans-serif;
+    color: aliceblue;
+    font-size: 0.9em;
+    margin-right: 0.2rem;
+    margin-top: 0.2rem;
+}
+
+.websiteTitle {
+    font-family: 'Tilt Prism', cursive;
+    padding-left: 4rem;
+    padding-top: 4rem;
+    width: 100%;
+    color: aliceblue;
+    font-size: 1.8rem;
+}
+
+.onTopOfBackroundPhoto {
+    position: absolute;
+    z-index: 2;
+}
+
+.intro {
+    visibility: hidden;
+    opacity: 0;
+}
+
+@media (min-width: 600px) {
+
+    .websiteTitle {
+        font-family: 'Tilt Prism', cursive;
+        padding-left: 17rem;
+        padding-top: 8rem;
+        width: 100%;
+        color: aliceblue;
+        font-size: 8rem;
+    }
+
+        .navlink{
+            font-size: 1.5rem;
+        }
+}

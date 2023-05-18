@@ -1,0 +1,15 @@
+#navBar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navBar .navBarLogo {
+    height: 5rem;
+    z-index: 2;
+}
+
+#navBar .navigationLinks {
+    z-index: 1;
+}

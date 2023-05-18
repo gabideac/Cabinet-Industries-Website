@@ -1,0 +1,44 @@
+.footerContainer {
+    background: rgb(78, 69, 69);
+    background: linear-gradient(0deg, rgb(123, 146, 145) 0%, rgba(53, 110, 120, 1) 72%);
+    height: 8rem;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.socialLinks {
+    display: flex;
+    flex-direction: column;
+}
+
+.sLink {
+    font-family: quicksand, sans-serif;
+    font-size: 0.8rem;
+    margin-top: 0.2rem;
+    color: aliceblue;
+}
+
+.telNr {
+    text-decoration: none;
+    font-family: quicksand, sans-serif;
+    font-size: 0.8rem;
+    color: aliceblue;
+}
+
+@media (min-width: 600px) {
+.footerLogo {
+        width: 7rem;
+        height: 7rem;
+    }
+
+    .sLink {
+        font-size: 1.2rem;
+    }
+
+        .telNr{
+            font-size: 1.2rem;
+        }
+}

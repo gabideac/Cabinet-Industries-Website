@@ -1,0 +1,34 @@
+.introductionTextContainer {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.introductionTitle {
+    font-family: 'Tilt Prism', cursive;
+    color: #f7a61b;
+    font-size: 1.5rem;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.introductionText {
+    font-family: quicksand, sans-serif;
+    color: #f7a61b;
+    font-size: 1rem;
+    padding-left: 0.5rem;
+    margin: 0;
+}
+
+@media (min-width: 600px) {
+    .introductionTitle {
+        font-size: 3rem;
+    }
+
+    .introductionText {
+        font-size: 1.8rem;
+    }
+}

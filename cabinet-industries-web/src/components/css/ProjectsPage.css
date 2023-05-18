@@ -1,0 +1,28 @@
+.bckPattern {
+    background: linear-gradient(45deg, transparent 49%, #2c5f56 49% 51%, transparent 51%), linear-gradient(-45deg, transparent 49%, #2c5f56 49% 51%, transparent 51%);
+    background-size: 1em 1em;
+    background-color: #356e73;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.homepageLink {
+    padding-right: 1rem;
+}
+
+.projectsTitlePage {
+    font-family: 'Tilt Prism', cursive;
+    color: #f7a61b;
+    font-size: 2.5rem;
+    margin: 0;
+    padding-left: 5%;
+    padding-top: 30px;
+}
