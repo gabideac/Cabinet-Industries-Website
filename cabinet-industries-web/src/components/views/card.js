@@ -1,11 +1,14 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import '../css/card.css';
+import ProjectModal from './ProjectModal';
 
 function Card({ project }) {
     const title = project.title;
-    const description = project.description
+    const description = project.description;
     const [titleImage, setTitleImage] = useState('');
+    const [isModalOpen, setIsModalOpen] = useState(false); // State to control modal visibility
+
     useEffect(() => {
         const fetchTitleImage = async () => {
             try {
@@ -25,14 +28,27 @@ function Card({ project }) {
         fetchTitleImage();
     }, [project.id]);
 
+    const openModal = () => {
+        setIsModalOpen(true);
+    };
+
+    const closeModal = () => {
+        setIsModalOpen(false);
+    };
+
     return (
-        <a href={`project/${project.id}`}><div className='card'>
-            <div className='teaser'>
-                <p className='title'>{title}</p>
-                <p className='description'>{description}</p>
+        <>
+            <div className='card' onClick={openModal}>
+                <div className='teaser'>
+                    <p className='title'>{title}</p>
+                    <p className='description'>{description}</p>
+                </div>
+                <img src={titleImage} alt="titlePhoto" className='titlePhoto' />
             </div>
-            <img src={titleImage} alt="titlePhoto" className='titlePhoto' />
-        </div></a>
+            {isModalOpen && (
+                <ProjectModal id={project.id} onClose={closeModal} />
+            )}
+        </>
     );
 }
 

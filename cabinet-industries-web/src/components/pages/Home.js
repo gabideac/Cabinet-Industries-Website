@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../views/header';
 import Projects from '../views/projects'
+import MainPageContent from '../views/mainPageConternt';
 import Footer from '../views/footer'
 
 function Home() {
@@ -8,6 +9,7 @@ function Home() {
         <div className="App bckPattern">
             <Header />
             <Projects />
+            <MainPageContent />
             <Footer />
         </div>
     );

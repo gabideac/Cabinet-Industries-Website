@@ -1,26 +1,22 @@
 import React from 'react';
 import '../css/header.css';
 import HeaderPhoto from '../../assets/headerPhoto.png'
-import Logo from '../../assets/logoCircleWhite.png'
-import Introduction from './introduction';
+import NavBar from './navbar';
 
 function Header() {
 
     return (
-        <div>
-            <a src='/'> <img src={Logo} alt="logo" className='logo onTopOfBackroundPhoto ' /> </a>
-
-            <div className='textContainer onTopOfBackroundPhoto '>
-                <div className='navigation'>
-                    <a href='/' className='navlink'>Acasă </a>
-                    <a href='/projects' className='navlink'>Proiecte </a>
-                    <a href='/projects' className='navlink'>Calculează Preț </a>
-                </div>
-                <p className='websiteTitle'>Cabinet Industries</p>
+        <div id='headerContainer'>
+            <NavBar />
+            <h1>Cabinet Industries</h1>
+            <div className='introductionTextContainer'>
+                <h3 className='introductionTitle'>Despre noi</h3>
+                <p className='introductionText'> Cabinet Industries, situat în Cluj-Napoca,
+                    produce mobilier personalizat, din MDF si lemn masiv. Servicile noastre includ: design, asamblare și montaj.
+                    Tâmplarii noștri lucrează cu materiale de cea mai bună calitate pentru producerea de mobilier impecabil.
+                    Oferim zece ani garanție.</p>
             </div>
             <img src={HeaderPhoto} alt="HeaderPhoto" className='headerPhoto' />
-            <Introduction className='introduction' />
-
         </div>
     )
 

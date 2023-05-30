@@ -5,11 +5,11 @@ import '../css/navBar.css'
 function NavBar() {
     return (
         <div id='navBar' >
-            <a href='/'> <img src={Logo} alt="logo" className='navBarLogo' /> </a>
+            <a href='/' > <img src={Logo} alt="logo" className='navBarLogo' /> </a>
             <div className='navigationLinks'>
-                <a href='/' >Acasă </a>
-                <a href='/projects' >Proiecte </a>
-                <a href='/projects'>Calculează Preț </a>
+                <a href='/' className='navigationLink'>Acasă </a>
+                <a href='/projects' className='navigationLink'>Proiecte </a>
+                <a href='/projects' className='navigationLink'>Calculează Preț </a>
             </div>
         </div>
     )

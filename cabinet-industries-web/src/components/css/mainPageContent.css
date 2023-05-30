@@ -1,0 +1,57 @@
+#mainPgaeContent {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+#mainPgaeContentContainer {
+    margin-top: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#mainPgaeContentContainer h1 {
+    font-family: quicksand, sans-serif;
+    color: #f7a61b;
+    font-size: 2.5rem;
+}
+
+#mainPgaeContentContainer .mainPageContentElement {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    margin: 3rem;
+    padding: 1rem;
+    border-style: dashed;
+    border-color: #f7a61b;
+}
+
+#mainPgaeContentContainer .mainPageContentElement .textSubelement {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 50%;
+    color: #f7a61b;
+    font-family: quicksand, sans-serif;
+}
+
+#mainPgaeContentContainer .mainPageContentElement .textSubelement p {
+    font-size: 2rem;
+}
+
+#mainPgaeContentContainer .mainPageContentElement .textSubelement li {
+    font-size: 2rem;
+}
+
+#mainPgaeContentContainer .mainPageContentElement .textSubelement h3 {
+    font-size: 2.2rem;
+}
+
+#mainPgaeContentContainer .mainPageContentElement .imageSubelement {
+    max-width: 50%;
+    height: 20rem;
+    background-size: contain;
+}

@@ -1,55 +1,59 @@
-.headerPhoto {
+#headerContainer {
+    width: 100%;
+    height: 50rem;
+}
+
+#headerContainer h1 {
+    font-family: Tilt Prism, quicksand, sans-serif;
+    color: antiquewhite;
+    font-size: 8rem;
+    top: 8rem;
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+
+}
+
+#headerContainer .headerPhoto {
     position: relative;
+    height: 50rem;
+    object-fit: cover;
     width: 100%;
     z-index: 1;
 }
 
-.navigation {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-}
-
-.navlink {
-    font-family: quicksand, sans-serif;
-    color: aliceblue;
-    font-size: 0.9em;
-    margin-right: 0.2rem;
-    margin-top: 0.2rem;
-}
-
-.websiteTitle {
-    font-family: 'Tilt Prism', cursive;
-    padding-left: 4rem;
-    padding-top: 4rem;
-    width: 100%;
-    color: aliceblue;
-    font-size: 1.8rem;
-}
-
-.onTopOfBackroundPhoto {
-    position: absolute;
+#headerContainer .introductionTextContainer {
     z-index: 2;
+    position: absolute;
+    top: 32rem;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
-.intro {
-    visibility: hidden;
-    opacity: 0;
+#headerContainer .introductionTitle {
+    font-family: quicksand, sans-serif;
+    color: antiquewhite;
+    font-size: 3rem;
+    margin: 0;
+    margin-bottom: 10px;
 }
 
-@media (min-width: 600px) {
+#headerContainer .introductionText {
+    font-family: quicksand, sans-serif;
+    color: antiquewhite;
+    font-size: 2rem;
+    padding-left: 0.5rem;
+    margin: 0;
+}
 
-    .websiteTitle {
-        font-family: 'Tilt Prism', cursive;
-        padding-left: 17rem;
-        padding-top: 8rem;
-        width: 100%;
-        color: aliceblue;
-        font-size: 8rem;
+@media (max-width: 1200px) {
+
+    #headerContainer .introductionTextContainer {
+        display: none;
     }
-
-        .navlink{
-            font-size: 1.5rem;
-        }
 }

@@ -7,22 +7,25 @@
     height: 100%;
 }
 
-.top {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.homepageLink {
-    padding-right: 1rem;
-}
-
-.projectsTitlePage {
-    font-family: 'Tilt Prism', cursive;
+#projectsContainer .projectsTitlePage {
+    font-family: quicksand, sans-serif;
     color: #f7a61b;
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin: 0;
     padding-left: 5%;
-    padding-top: 30px;
+    padding-top: 10rem;
+    margin-bottom: 2rem;
+}
+
+#projectsContainer .projectCards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#projectsContainer .porjectsIntroText {
+    color: #f7a61b;
+    font-family: quicksand, sans-serif;
+    font-size: 1.5rem;
+    padding-right: 5rem;
+    padding-left: 5rem;
 }
