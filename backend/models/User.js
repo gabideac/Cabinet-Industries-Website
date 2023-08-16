@@ -1,22 +1,24 @@
 const mongoose = require('mongoose')
+const bcrypt = require("bcrypt")
 
 const userSchema = new mongoose.Schema({
     username: {
         type: String,
-        required: true
+        required: [true, "Username is required"],
+        unique: true,
     },
     password: {
         type: String,
-        required: true
+        required: [true, "Password is required"],
     },
-    roles: [{
-        type: String,
-        default: "Poster"
-    }],
-    active: {
+    isManager: {
         type: Boolean,
-        default: true
+        default: false,
     }
+})
+
+userSchema.pre("save", async function() {
+    this.password = await bcrypt.hash(this.password, 12)
 })
 
 module.exports = mongoose.model('User', userSchema)

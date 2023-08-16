@@ -1,6 +1,6 @@
-require('dotenv').config()
 const express = require("express")
 const app = express()
+const mongoose = require("mongoose")
 const path = require("path")
 const { logger } = require('./middleware/logger')
 const errorHandler = require('./middleware/errorHandler')
@@ -8,8 +8,13 @@ const cookieParser = require('cookie-parser')
 const cors = require('cors')
 const corsOptions = require('./config/corsOptions')
 const { all } = require('./routes/root');
-const PORT = process.env.PORT || 3030
+
+require('dotenv').config()
+const PORT = process.env.PORT
+const DB = process.env.DB
+
 const projectsRoutes = require('./routes/projects')
+const authRoute = require('./routes/authRoute')
 
 app.use(logger)
 
@@ -19,7 +24,16 @@ app.use(express.json())
 
 app.use(cookieParser())
 
+mongoose.connect(DB, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+})
+.then(() => console.log("User database connected successfully"))
+.catch((err) => console.error(err));
+
 app.use('/api/projects', projectsRoutes)
+
+app.use('/api/auth', authRoute)
 
 app.use('/', express.static(path.join(__dirname, 'public')))
 
